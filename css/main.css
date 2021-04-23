@@ -1,0 +1,197 @@
+@charset 'utf-8';
+
+#container {
+  overflow-y:scroll;
+  overflow-x: hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position: relative;
+  width:100vh;
+  height:100vw;
+  top: -20px;
+}
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  height: 100vh;
+  /* font-size:0; */
+}
+
+#container .box {
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+}
+
+#container .box > div {
+  width:1200px;
+  height:1080px;
+  position:absolute;
+  top: -18%;
+  left: 7%;
+  /* top:50%;
+  left:50%; */
+  /* margin:-540px 0 0 -600px; */
+}
+
+
+
+.first {
+  padding-left: 10vw;
+}
+.fitst .main {
+  
+}
+.first header {
+  height: 9%;
+  width: 85vw;
+  border-bottom: 1vw solid #333;
+  margin-bottom: 3vw;
+}
+.first header a {
+  color: #f55140;
+}
+.first .title {
+  width: 85vw;
+  border-bottom: 1vw solid #333;
+}
+.first p {
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+}
+.first .material-icons {
+  font-size: 13vw;
+  color: #2f60ac;
+  margin: 3vw 0;
+  border-bottom: 1vw solid #333;
+  position: relative;
+}
+.first .material-icons::after {
+  content: 'SCROLL DOWN!';
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  left: 16vw;
+  top: 4.5vw;
+  opacity: 0;
+  transition: opacity .5s;
+  color: #f55140;
+}
+.first .material-icons:hover::after {
+  opacity: 1;
+}
+.try span {
+  margin-right: 60px;
+  font-weight: 700;
+  color: #2f60ac;
+}
+.contents {
+  position: absolute;
+  top: 27vw;
+  left: 40vw;
+  font-size: 3vw;
+  line-height: 1.2;
+}
+.contents li {
+}
+.contents li a {
+  color: #eee;
+  transition: .4s;
+}
+.contents li a:hover {
+  color: #fc968a;
+}
+
+
+
+.project {
+  margin-top: 30%;
+  /* position: relative; */
+}
+
+.project .title {
+  /* position: relative; */
+}
+/* .two .title::after {
+  content: '';
+  display: block;
+  width: 0.6vw;
+  height: 300px;
+  background: #333;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 45%;
+  top: -30px;
+} */
+.project .title h2 {
+  font-size: 4.5vw;
+}
+.project .title p {
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-transform: uppercase ;
+}
+.project .info {
+  display: flex;
+  align-items: baseline;
+
+}
+.project .info p{
+  margin-right: 30px;
+}
+
+
+.project .view {
+  position: relative;
+}
+.project .view a {
+  width: 65vw;
+  height: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -600px;
+  text-indent: -9999px;
+  border-radius: 0 100px 100px 100px;
+  box-sizing: border-box;
+  background: url(../images/grafvon.jpg) center center; 
+  background-size: cover;
+  transition: border .4s, opacity .4s, border-radius .5s;
+}
+.project .view a:hover {
+  border-radius: 0;
+  opacity: .7;
+}
+.project .bluebottle a {
+  background-image: url(../images/bluebottle.jpg);
+}
+.project .kangol a {
+  background-image: url(../images/kangol.jpg);
+}
+
+
+
+
+
+/* Translating the content's X ruines the scrollbar length. */
+/*
+#container {
+  overflow:scroll;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(-90deg) translateX(-100vw);
+  transform-origin: top left;
+  white-space:nowrap;
+}
+*/
